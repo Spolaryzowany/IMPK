@@ -1,0 +1,291 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+header {
+  font-family: 'Roboto', sans-serif;
+  height: 800px; }
+  header .nav {
+    height: 70px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; }
+  header ul {
+    width: 25%;
+    float: left;
+    list-style: none;
+    font-weight: 700;
+    text-align: center; }
+    header ul li {
+      display: inline-block;
+      padding: 25px 0;
+      margin: 0 10px;
+      cursor: pointer;
+      font-weight: 300; }
+  header ul:nth-child(2) {
+    width: 50%; }
+    header ul:nth-child(2) li {
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 1px; }
+  header .background {
+    height: 800px;
+    background-image: url("header-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  header .content {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 730px; }
+    header .content h1 {
+      color: white;
+      font-size: 72px;
+      text-align: center;
+      padding: 40px 0; }
+    header .content h2 {
+      color: white;
+      width: 700px;
+      margin: auto;
+      text-align: center; }
+    header .content .slider {
+      width: 80%;
+      margin: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      top: 500px; }
+    header .content .slider img {
+      width: 230px;
+      height: 130px;
+      display: inline-block;
+      margin: 0 30px; }
+
+#about {
+  height: 500px;
+  background-color: white;
+  font-family: 'Raleway', sans-serif; }
+  #about .info {
+    width: 60%;
+    height: 100%;
+    float: left; }
+    #about .info h1 {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 50px;
+      font-family: 'Anton', sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: black; }
+    #about .info p {
+      width: 80%;
+      margin: auto;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 300;
+      background-color: black;
+      color: white;
+      padding: 20px;
+      border-radius: 20px; }
+    #about .info .btn {
+      position: relative;
+      width: 250px;
+      height: 70px;
+      margin: 50px auto 0;
+      overflow: hidden; }
+      #about .info .btn:hover .cover-btn {
+        left: 0; }
+      #about .info .btn:hover .main-btn {
+        left: 250px; }
+    #about .info button {
+      display: block;
+      font-size: 20px;
+      border: none;
+      text-transform: uppercase;
+      width: 250px;
+      height: 70px;
+      cursor: pointer; }
+    #about .info .main-btn {
+      background-color: white;
+      color: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: left .3s linear;
+      border: 2px solid black; }
+    #about .info .cover-btn {
+      background-color: black;
+      border: 2px solid black;
+      color: white;
+      position: absolute;
+      top: 0;
+      left: -250px;
+      transition: left .3s linear; }
+  #about .background {
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-image: url("about-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+#offer {
+  height: 850px;
+  background-color: white; }
+  #offer h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    padding: 20px 0;
+    font-size: 45px;
+    font-weight: 300; }
+  #offer p {
+    color: black;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 30px; }
+  #offer .container {
+    height: 500px;
+    width: 80%;
+    margin: auto; }
+    #offer .container .web, #offer .container .service {
+      float: left;
+      width: 50%; }
+      #offer .container .web ul, #offer .container .service ul {
+        width: 600px;
+        list-style: none; }
+      #offer .container .web ul li, #offer .container .service ul li {
+        width: 100%;
+        font-size: 16px;
+        margin: 10px 0;
+        font-family: 'Source Sans Pro', sans-serif; }
+        #offer .container .web ul li .position, #offer .container .service ul li .position {
+          height: 50px;
+          width: 100%;
+          background-color: #2b2bfa;
+          cursor: pointer;
+          line-height: 3;
+          color: white;
+          font-weight: 300; }
+        #offer .container .web ul li span, #offer .container .service ul li span {
+          float: left;
+          padding-left: 20px;
+          text-transform: uppercase; }
+        #offer .container .web ul li i, #offer .container .service ul li i {
+          float: right;
+          line-height: 3;
+          height: 50px;
+          width: 40px; }
+        #offer .container .web ul li p, #offer .container .service ul li p {
+          font-size: 16px;
+          padding: 10px 20px 0;
+          margin: 0;
+          width: 100%;
+          text-align: left;
+          overflow: hidden;
+          height: 150px;
+          color: black;
+          font-weight: 400; }
+
+form {
+  height: 600px;
+  position: relative; }
+  form .form-background {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    form .form-background video {
+      min-width: 100%;
+      min-height: 100%; }
+  form .content {
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+    form .content .form {
+      width: 500px;
+      margin: auto; }
+      form .content .form h1 {
+        font-size: 50px;
+        text-align: left;
+        color: white; }
+      form .content .form h2 {
+        color: white;
+        padding: 20px 0 0; }
+      form .content .form div {
+        padding: 10px 0; }
+        form .content .form div label {
+          color: white;
+          display: block;
+          font-size: 12px; }
+        form .content .form div input {
+          font-size: 18px;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          color: white;
+          padding: 10px 15px;
+          border-bottom: 1px solid yellow;
+          width: 100%; }
+        form .content .form div textarea {
+          width: 100%;
+          border: none;
+          outline: none;
+          border-bottom: 1px solid yellow;
+          background-color: transparent;
+          color: white;
+          padding: 10px;
+          font-family: 'Raleway', sans-serif; }
+      form .content .form button {
+        color: yellow;
+        border: none;
+        background-color: transparent;
+        width: 200px;
+        height: 50px;
+        display: block;
+        margin: auto;
+        cursor: pointer;
+        text-transform: uppercase; }
+        form .content .form button::after {
+          content: '';
+          height: 1px;
+          width: 0;
+          background-color: yellow;
+          display: block;
+          margin: 15px 0 0;
+          transition: width .3s linear; }
+      form .content .form button:hover::after {
+        width: 200px; }
+      form .content .form p {
+        width: 50%;
+        color: white;
+        float: left;
+        margin-top: 10px; }
+      form .content .form i {
+        margin-right: 10px; }
+
+footer {
+  background-color: black; }
+  footer h6 {
+    padding: 10px;
+    color: #bdb8b8;
+    font-family: 'Raleway', sans-serif; }
